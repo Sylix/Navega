@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 
 namespace Navega
@@ -13,9 +12,10 @@ namespace Navega
             NavigationPage.SetBackButtonTitle (this, string.Empty);
         }
 
-        private async void SalvarItem_OnClicked (object sender, EventArgs e)
+        private async void Add_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync (new SecondPage ());
+            Application.Current.MainPage = new SecondPage();
+            //await Navigation.PushAsync (new SecondPage ());
         }
     }
 }

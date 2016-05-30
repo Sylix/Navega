@@ -9,8 +9,8 @@ namespace Navega
         {
             InitializeComponent ();
 
-            MainPage = new NavegaPage ();
-            //MainPage = new NavigationPage (new FirstPage ());
+            //MainPage = new NavegaPage ();
+            MainPage = new NavigationPage (new FirstPage ());
 
             //MainPage = new Tabs.ContainerPage ();
             //MainPage = new TabNavigationPage ();
